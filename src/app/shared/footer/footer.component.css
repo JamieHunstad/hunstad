@@ -1,0 +1,27 @@
+footer{
+    background-color:  var(--colorSecondary);
+}
+
+.footer-container{
+    padding: 20px 0px;
+    font-family: var(--bodyFontRegular);
+    color: var(--colorMain);
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+.footer-container-copyright,.footer-container-social{
+    display: flex;
+    display: -webkit-flex;
+    text-align: center;
+    justify-content: center;
+}
+.footer-container-copyright{
+    margin-bottom: 20px;
+}
+i{
+    color: var(--colorMain);
+    margin: 0px 10px;
+}
+i:hover{
+    color: #c9f0ff;
+}
