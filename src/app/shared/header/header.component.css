@@ -23,10 +23,13 @@ nav{
     font-size: 26px;
 }
 .hamburger-menu{
-    display: none;
+    height:0px;
+    overflow:hidden;
 }
 .hamburger-menu-open{
+    height:100%;
     position:fixed;
+    overflow: hidden;
     padding:0;
     margin:0;
 
@@ -39,6 +42,9 @@ nav{
     background-color: var(--colorTertiary);
     color: var(--colorSecondary);
     font-family: var(--bodyFontBold);
+
+    transition: all 250ms ease-in-out;
+    z-index: 100;
 }
 .hamburger-menu-links_container{
     height: 100%;
@@ -52,19 +58,54 @@ nav{
     margin: 40px 0px;
     font-size: 45px;
 }
-.hamburger-icon-open img, .hamburger-icon-close img{
+
+/* hamburger icon */
+.nav_toggle{
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 30px;
-    width:30px;
+    border: none;
+    width:2em;
+    height:30px;
+    background-color: white;
+    cursor:pointer;
+    z-index: 200;
 }
+.hamburger{
+    display: block;
+    position: relative;
+    cursor:pointer;
+}
+.hamburger, .hamburger::after {
+    width: 2em;
+    height: 3px;
+    border-radius: 100px;
+    background: var(--colorSecondary);
+    transition: transform 250ms ease-in-out;
+    cursor:pointer;
+}
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    cursor:pointer;
+}
+
+.nav_toggle_open .hamburger{
+    transform: rotate(45deg);
+}
+.nav_toggle_open .hamburger::after {
+    transform: rotate(90deg) translate(-6px);
+}
+
 
 @media screen and (min-width: 768px) {
     .nav-container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    .hamburger-icon-open img{
+    .nav_toggle{
         display: none;
     }
     .nav-container-left,.nav-container-center,.nav-container-right{

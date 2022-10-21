@@ -13,10 +13,10 @@
                     <a>about</a>
                     <a>contact</a>
                 </div>
+            </div><div class="nav_toggle-container">
+            <button class="nav_toggle" [ngClass]="{nav_toggle_open: toggle==true}" (click)="navToggle()"><span class="hamburger"></span></button>
             </div>
-            <div class="hamburger-icon-open"><img src="assets/icons/hamburger_icon_open.svg"></div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon-close"><img src="assets/icons/hamburger_icon_close.svg"></div>
+            <div class="hamburger-menu" [ngClass]="{'hamburger-menu-open': toggle==true}">
                 <div class="hamburger-menu-links_container">
                     <a class="hamburger-menu-links">resume</a>
                     <a class="hamburger-menu-links">portfolio</a>
