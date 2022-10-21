@@ -24,10 +24,22 @@ nav{
 }
 .hamburger-menu{
     height:0px;
-    overflow:hidden;
+    position:fixed;
+    overflow: hidden;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    background-color: var(--colorTertiary);
+    color: var(--colorSecondary);
+    font-family: var(--bodyFontBold);
+
+    transition: all 250ms ease-in-out;
+    width: 100%;
 }
 .hamburger-menu-open{
-    height:100%;
     position:fixed;
     overflow: hidden;
     padding:0;
