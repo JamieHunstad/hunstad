@@ -1,6 +1,5 @@
 main { 
     background-color: var(--colorMain);
-    padding-bottom: 900px;
 }
 .hero-container{
     text-align: center;
@@ -16,7 +15,6 @@ main {
 
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 15, 37, 0.4);
     animation: bounce .75s infinite alternate;
- 
 }
 @keyframes bounce {
     100%{
@@ -67,10 +65,38 @@ main {
 .headline-mobile {
     text-align: center;
     line-height: 2;
+    margin-bottom: 50px;
 }
 .headline-mobile .bold-font {
     font-family: var(--displayFont);
+    color: var(--colorSecondary);
     font-family: 20px;
+}
+
+.home-button-container{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+    height: 200px;
+}
+.home-button{
+    background: none;
+    border: none;
+    filter: drop-shadow(0px 20px 7px rgba(0, 15, 37, 0.2));
+    cursor: pointer;
+}
+.home-button h4{
+    position: relative;
+    top:-45px;
+    font-family: var(--displayFont);
+    color: var(--colorSecondary);
+}
+.home-button img{
+    width:180px;
+}
+.home-button:hover{
+    padding-top: 5px;
+    filter: drop-shadow(0px 1px 5px rgba(0, 15, 37, 0.4));
 }
 
 @media screen and (min-width: 768px){
@@ -84,6 +110,7 @@ main {
         display: block;
         text-align: center;
         line-height: 2;
+        margin-bottom: 50px;
     }
     .headline-desktop .bold-font {
         font-family: var(--displayFont);
