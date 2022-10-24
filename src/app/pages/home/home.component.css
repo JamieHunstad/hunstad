@@ -1,10 +1,11 @@
 main { 
     background-color: var(--colorMain);
+    padding: 10vh 0;
 }
 .hero-container{
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top:60px;
+    padding-bottom: 75px;
 }
 .hero-letters{
     font-family: var(--heroFont);
@@ -14,7 +15,9 @@ main {
     top: 20px;
 
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 15, 37, 0.4);
+    /*
     animation: bounce .75s infinite alternate;
+    */
 }
 @keyframes bounce {
     100%{
@@ -65,7 +68,7 @@ main {
 .headline-mobile {
     text-align: center;
     line-height: 2;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 }
 .headline-mobile .bold-font {
     font-family: var(--displayFont);
@@ -76,7 +79,6 @@ main {
 .home-button-container{
     width: 100%;
     text-align: center;
-    padding-bottom: 50px;
     height: 200px;
 }
 .home-button{
@@ -110,7 +112,7 @@ main {
         display: block;
         text-align: center;
         line-height: 2;
-        margin-bottom: 50px;
+        margin-bottom: 75px;
     }
     .headline-desktop .bold-font {
         font-family: var(--displayFont);
