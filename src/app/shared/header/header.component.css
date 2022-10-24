@@ -38,6 +38,7 @@ nav{
 
     transition: all 250ms ease-in-out;
     width: 100%;
+    z-index: 100;
 }
 .hamburger-menu-open{
     position:fixed;
@@ -130,6 +131,13 @@ nav{
         font-family: var(--bodyFontBold);
     }
     .nav-container-left a,.nav-container-right a{
+        cursor: pointer;
+        padding: 5px 15px;
         margin: 0px 30px;
+        transition: all 150ms ease-in-out;
+    }
+    .nav-container-left a:hover,.nav-container-right a:hover{
+        background-color: var(--colorMain);
+        border-radius: 100px;
     }
 }

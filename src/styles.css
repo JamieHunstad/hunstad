@@ -23,18 +23,37 @@
     src: url("assets/font/OpenSans-Bold.woff2") format("woff2"), url("assets/font/OpenSans-Bold.woff")
     format("woff");
 }
+@font-face {
+    font-family: "Luckiest Guy";
+    src: url("assets/font/luckiestguy.woff2") format("woff2"), url("assets/font/luckiestguy.woff")
+    format("woff");
+}
 :root {
     --displayFont: "Cooper Black", Helvetica, Arial, sans-serif;
     --bodyFontLight: "Open Sans Light", Helvetica, Arial, sans-serif;
     --bodyFontRegular: "Open Sans Regular", Helvetica, Arial, sans-serif;
     --bodyFontBold: "Open Sans Bold", Helvetica, Arial, sans-serif;
+    --heroFont: "Luckiest Guy", Helvetica, Arial, sans-serif;
 
     --colorMain: #7CCDED;
     --colorSecondary: #0B2632;
     --colorTertiary: #FFFFFF;
 }
-body{
+h4{
+    font-family: var(--bodyFontRegular);
+    font-size: 16px;
+    color: var(--colorSecondary);
 }
+
 .global-container{
     margin: 0px 20px;
+}
+.nowrap{
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+    h4{
+        font-size: 18px;
+    }
 }
