@@ -27,3 +27,9 @@
         </div>
     </nav>
 </header>
+<section class="cloud-transition"  [ngClass]="{'cloud-transition-remove': removeClouds == true}">
+    <div class="cloud-container">
+        <img class="cloud-left" [ngClass]="{'cloud-left-moved': fireClouds == true}" src="assets/images/clouds_left.svg">
+        <img class="cloud-right cloud-right-moved" [ngClass]="{'cloud-right-moved': fireClouds == true}" src="assets/images/clouds_right.svg">
+    </div>
+</section>

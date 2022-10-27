@@ -1,5 +1,8 @@
 nav{
-    background-color: var(--colorTertiary);
+    background-color: #fffffff5;
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
 }
 .nav-container{
     display: grid;
@@ -110,6 +113,44 @@ nav{
 }
 .nav_toggle_open .hamburger::after {
     transform: rotate(90deg) translate(-6px);
+}
+
+.cloud-transition{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top:0;
+    left:0;
+    z-index: 200000;
+}
+
+.cloud-transition-remove{
+    display: none;
+}
+
+.cloud-left{
+    position: absolute;
+    top:0;
+    left:0;
+    transition: all 5s ease-in-out;
+}
+.cloud-right{
+    position: absolute;
+    top:0;
+    right:0;
+    transition: all 5s ease-in-out;
+}
+.cloud-left-moved{
+    left:-3000px;
+}
+.cloud-right-moved{
+    right:-3000px;
+}
+
+.cloud-container img{
+    width: 1500px;
 }
 
 

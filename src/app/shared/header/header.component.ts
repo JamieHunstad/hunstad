@@ -8,17 +8,30 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   toggle: boolean = false;
+  removeClouds: boolean = false;
+  fireClouds: boolean = false;
 
   constructor() {
    }
 
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.removeClouds = false;
+      this.fireClouds = false;
+      this.fireClouds = true;
 
+      setTimeout(() => {
+        this.removeClouds = true;
+      }, 3000)
+
+    }, 100)
   }
 
   navToggle(){
     this.toggle = !this.toggle;
   }
+
+  
 
 }
