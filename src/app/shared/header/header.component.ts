@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
         this.removeClouds = true;
       }, 3000)
 
-    }, 100)
+    }, 30)
   }
 
   navToggle(){
