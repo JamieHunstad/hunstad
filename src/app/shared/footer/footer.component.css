@@ -18,6 +18,9 @@ footer{
 .footer-container-copyright{
     margin-bottom: 20px;
 }
+.footer-container-copyright p{
+    color: var(--colorMain);
+}
 i{
     color: var(--colorMain);
     margin: 0px 10px;

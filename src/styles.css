@@ -39,21 +39,57 @@
     --colorSecondary: #0B2632;
     --colorTertiary: #FFFFFF;
 }
+h2{
+    font-family: var(--displayFont);
+    font-size: 50px;
+    color: var(--colorSecondary);
+}
+h3{
+    font-family: var(--bodyFontBold);
+    font-size: 24px;
+    color: var(--colorSecondary);
+}
 h4{
     font-family: var(--bodyFontRegular);
     font-size: 16px;
     color: var(--colorSecondary);
 }
+p{
+    font-family: var(--bodyFontRegular);
+    font-size: 16px;
+    color: var(--colorSecondary);
+}
 
+.margin-sm{
+    margin: 5px 0px;
+}
+.margin-m{
+    margin: 10px 0px;
+}
+.p-40{
+    padding: 40px 0px;
+}
 .global-container{
     margin: 0px 20px;
 }
 .nowrap{
     white-space: nowrap;
 }
+.placeholder {
+    background-color: var(--colorSecondary);
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+.placeholder:hover{
+    filter: brightness(105%);
+}
 
 @media screen and (min-width: 768px) {
     h4{
         font-size: 16px;
+    }
+    h2{
+        font-size: 60px;
     }
 }
