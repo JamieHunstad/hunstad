@@ -1,0 +1,65 @@
+.about-container{
+    padding-top: 60px;
+    height:100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    background-color: var(--colorMain);
+}
+
+.parallax-container{
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.projects-title{
+    color: var(--colorSecondary);
+    font-family: var(--displayFont);
+    font-size:90px;
+    position: relative;
+    top: 200px;
+    left: 10%;
+    z-index:-10;
+}
+.projects-content-container{
+    margin-top:-5px;
+    background-color: white;
+    padding-top:450px;
+    z-index: 3;
+    width: 100%;
+
+}
+.projects-content{
+    padding-bottom:300px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.projects-content--title{
+    margin-bottom: 50px;
+}
+.diver{
+    width:200px;
+    position: relative;
+    top: 250px;
+    left: 10%;
+    transform: translateZ(-10px) scale(2);
+    z-index:-10;
+}
+.cloud-1{
+    width:100px;
+    position: relative;
+    top: -200px;
+    right: 50px;
+    transform: translateZ(-15px) scale(3);
+    z-index: -1;
+    width:100px;
+}
+.cloud-2{
+    width:100px;
+    transform: translateZ(-20px) scale(4);
+    position: relative;
+    top: 540px;
+    left: 400px;
+    width: 140px;
+}
