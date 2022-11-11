@@ -66,6 +66,15 @@ p{
 .margin-m{
     margin: 10px 0px;
 }
+.margin-lg{
+    margin: 15px 0px;
+}
+.margin-xl-top{
+    margin-top: 40px;
+}
+.margin-xl-bottom{
+    margin-bottom: 40px;
+}
 .p-40{
     padding: 40px 0px;
 }
@@ -75,19 +84,19 @@ p{
 .nowrap{
     white-space: nowrap;
 }
-.placeholder {
+.mainTemplate-image, .mainTemplate-imageNoHvr {
     background-color: var(--colorSecondary);
     border-radius: 20px;
     width: 100%;
-    cursor: pointer;
     display: block;
     margin-left: auto;
     margin-right: auto;
 
     transition: all 1s;
 }
-.placeholder:hover{
+.mainTemplate-image:hover{
     width: 95%;
+    cursor: pointer;
 }
 .link-main, .link-main span{
     font-family: var(--bodyFontBold);
@@ -105,6 +114,67 @@ p{
     margin-left:20px;
 }
 
+
+/* Main Pages Styling */
+.mainTemplate-container{
+    padding-top: 60px;
+    height:100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    background-color: var(--colorMain);
+}
+
+.parallax-container{
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.mainTemplate-title{
+    color: var(--colorSecondary);
+    font-family: var(--displayFont);
+    font-size:90px;
+    position: relative;
+    top: 200px;
+    left: 10%;
+    z-index:-10;
+}
+.mainTemplate-content-container{
+    margin-top:-5px;
+    background-color: white;
+    padding-top:450px;
+    z-index: 3;
+    width: 100%;
+
+}
+.mainTemplate-content{
+    padding-bottom:300px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.mainTemplate-content--title{
+    margin-bottom: 50px;
+}
+.cloud-1{
+    width:100px;
+    position: relative;
+    top: -200px;
+    right: 50px;
+    transform: translateZ(-15px) scale(3);
+    z-index: -1;
+    width:100px;
+}
+.cloud-2{
+    width:100px;
+    transform: translateZ(-20px) scale(4);
+    position: relative;
+    top: 540px;
+    left: 400px;
+    width: 140px;
+}
+
+/* */
 @media screen and (min-width: 768px) {
     h4{
         font-size: 16px;
@@ -113,3 +183,12 @@ p{
         font-size: 60px;
     }
 }
+@media only screen and (min-width: 750px) {
+    .mainTemplate-title {
+        font-size: 160px;
+    }
+    .mainTemplate-content{
+        padding-left:25%;
+        padding-right:25%;
+    }
+  }
