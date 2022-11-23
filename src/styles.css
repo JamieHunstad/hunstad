@@ -28,12 +28,17 @@
     src: url("assets/font/luckiestguy.woff2") format("woff2"), url("assets/font/luckiestguy.woff")
     format("woff");
 }
+@font-face {
+    font-family: "Sunrise";
+    src: url("assets/font/Sunrise.woff2") format("woff2"), url("assets/font/Sunrise.woff")
+    format("woff");
+}
 :root {
-    --displayFont: "Cooper Black", Helvetica, Arial, sans-serif;
+    --displayFont: "Sunrise", Helvetica, Arial, sans-serif;
     --bodyFontLight: "Open Sans Light", Helvetica, Arial, sans-serif;
     --bodyFontRegular: "Open Sans Regular", Helvetica, Arial, sans-serif;
     --bodyFontBold: "Open Sans Bold", Helvetica, Arial, sans-serif;
-    --heroFont: "Luckiest Guy", Helvetica, Arial, sans-serif;
+    --heroFont: "Sunrise", Helvetica, Arial, sans-serif;
 
     --colorMain: #7CCDED;
     --colorSecondary: #0B2632;

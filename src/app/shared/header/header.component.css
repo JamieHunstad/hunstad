@@ -23,7 +23,13 @@ nav{
 
     font-family: var(--displayFont);
     color: var(--colorSecondary);
-    font-size: 26px;
+    font-size: 40px;
+}
+.nav-container-center-mobile{
+    display:block;
+}
+.nav-container-center-desktop{
+    display:none;
 }
 .hamburger-menu{
     height:0px;
@@ -37,7 +43,7 @@ nav{
 
     background-color: var(--colorTertiary);
     color: var(--colorSecondary);
-    font-family: var(--bodyFontBold);
+    font-family: var(--displayFont);
 
     transition: all 250ms ease-in-out;
     width: 100%;
@@ -57,7 +63,7 @@ nav{
 
     background-color: var(--colorTertiary);
     color: var(--colorSecondary);
-    font-family: var(--bodyFontBold);
+    font-family: var(--displayFont);
 
     transition: all 250ms ease-in-out;
     z-index: 100;
@@ -72,7 +78,10 @@ nav{
 }
 .hamburger-menu-links{
     margin: 40px 0px;
-    font-size: 45px;
+    font-size: 60px;
+}
+.hamburger-menu-links:hover{
+    font-size: 58px;
 }
 
 /* hamburger icon */
@@ -159,6 +168,12 @@ nav{
     .nav-container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    .nav-container-center-mobile{
+        display:none;
+    }
+    .nav-container-center-desktop{
+        display:block;
     }
     .nav_toggle{
         display: none;

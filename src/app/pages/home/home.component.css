@@ -10,7 +10,7 @@ main {
 .hero-letters{
     font-family: var(--heroFont);
     color: white;
-    font-size: 65px;
+    font-size: 80px;
     position: relative;
     top: 20px;
 
@@ -71,9 +71,9 @@ main {
     margin-bottom: 75px;
 }
 .headline-mobile .bold-font {
-    font-family: var(--displayFont);
+    font-family: var(--bodyFontBold);
     color: var(--colorSecondary);
-    font-family: 20px;
+    text-transform: uppercase;
 }
 
 .home-button-container{
@@ -90,7 +90,7 @@ main {
 .home-button h4{
     position: relative;
     top:-45px;
-    font-family: var(--displayFont);
+    font-family: var(--bodyFontBold);
     color: var(--colorSecondary);
 }
 .home-button img{
@@ -104,7 +104,7 @@ main {
 
 @media screen and (min-width: 768px){
     .hero-letters{
-        font-size: 80px;
+        font-size: 100px;
     }
     .headline-mobile {
         display: none;
@@ -116,7 +116,7 @@ main {
         margin-bottom: 75px;
     }
     .headline-desktop .bold-font {
-        font-family: var(--displayFont);
-        font-family: 20px;
+        font-family: var(--bodyFontBold);
+        text-transform: uppercase;
     }
 }
