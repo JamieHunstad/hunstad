@@ -31,6 +31,10 @@ nav{
 .nav-container-center-desktop{
     display:none;
 }
+.nav-container-center a{
+    text-decoration: none;
+    color: var(--colorSecondary);
+}
 .hamburger-menu{
     height:0px;
     position:fixed;
@@ -79,6 +83,8 @@ nav{
 .hamburger-menu-links{
     margin: 40px 0px;
     font-size: 60px;
+    text-decoration: none;
+    color: var(--colorSecondary);
 }
 .hamburger-menu-links:hover{
     font-size: 58px;
@@ -192,8 +198,15 @@ nav{
         padding: 5px 15px;
         margin: 0px 30px;
         transition: all 150ms ease-in-out;
+
+        text-decoration: none;
+        color: var(--colorSecondary);
     }
     .nav-container-left a:hover,.nav-container-right a:hover{
+        background-color: var(--colorMain);
+        border-radius: 100px;
+    }
+    .link-active{
         background-color: var(--colorMain);
         border-radius: 100px;
     }

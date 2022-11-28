@@ -3,26 +3,26 @@
         <div class="global-container">
             <div class="nav-container">
                 <div class="nav-container-left">
-                    <a>resume</a>
-                    <a>projects</a>
+                    <a routerLink="/resume" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}">resume</a>
+                    <a routerLink="/projects" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}">projects</a>
                 </div>
                 <div class="nav-container-center">
-                    <a class="nav-container-center-desktop">hunstad</a>
-                    <a class="nav-container-center-mobile">jh</a>
+                    <a class="nav-container-center-desktop" routerLink="">hunstad</a>
+                    <a class="nav-container-center-mobile" routerLink="">jh</a>
                 </div>
                 <div class="nav-container-right">
-                    <a>about</a>
-                    <a>contact</a>
+                    <a routerLink="/about" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}">about</a>
+                    <a routerLink="/contact" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}">contact</a>
                 </div>
             </div><div class="nav_toggle-container">
             <button class="nav_toggle" [ngClass]="{nav_toggle_open: toggle==true}" (click)="navToggle()"><span class="hamburger"></span></button>
             </div>
             <div class="hamburger-menu" [ngClass]="{'hamburger-menu-open': toggle==true}">
                 <div class="hamburger-menu-links_container">
-                    <a class="hamburger-menu-links">resume</a>
-                    <a class="hamburger-menu-links">projects</a>
-                    <a class="hamburger-menu-links">about</a>
-                    <a class="hamburger-menu-links">contact</a>
+                    <a class="hamburger-menu-links" (click)="navToggle()" routerLink="/resume">resume</a>
+                    <a class="hamburger-menu-links" (click)="navToggle()" routerLink="/projects">projects</a>
+                    <a class="hamburger-menu-links" (click)="navToggle()" routerLink="/about">about</a>
+                    <a class="hamburger-menu-links" (click)="navToggle()" routerLink="/contact">contact</a>
                 </div>
               </div>
         </div>

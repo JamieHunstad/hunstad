@@ -45,6 +45,11 @@
     --colorTertiary: #FFFFFF;
     --colorLink: #0A5D80;
 }
+h1{
+    font-family: var(--displayFont);
+    font-size: 120px;
+    color: var(--colorSecondary);
+}
 h2{
     font-family: var(--displayFont);
     font-size: 50px;
@@ -111,6 +116,7 @@ p{
     font-family: var(--bodyFontBold);
     color: var(--colorSecondary);
     cursor: pointer;
+    text-decoration: none;
 }
 .link-main:hover{
     font-family: var(--bodyFontBold);
@@ -126,6 +132,7 @@ p{
     font-family: var(--bodyFontRegular);
     font-size: 16px;
     color: var(--colorLink);
+    text-decoration: none;
 }
 .link-secondary:hover {
     text-decoration: underline;
@@ -181,7 +188,6 @@ p{
     width: 80%;
 }
 .cloud-1{
-    width:100px;
     position: relative;
     top: -200px;
     right: 50px;
@@ -190,12 +196,18 @@ p{
     width:100px;
 }
 .cloud-2{
-    width:100px;
     transform: translateZ(-20px) scale(4);
     position: relative;
     top: 540px;
     left: 400px;
     width: 140px;
+}
+.cloud-4{
+    transform: translateZ(-30px) scale(6);
+    position: relative;
+    top: 182px;
+    left: 1223px;
+    width: 80px;
 }
 .two-col{
     display:block;
@@ -228,6 +240,9 @@ p{
     }
     .content-wide-two_col-image{
         width: 80%;
+    }
+    .text-center{
+        text-align: center;
     }
     .flex-center{
         display: -webkit-box;
