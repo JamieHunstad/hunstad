@@ -4,36 +4,45 @@
 }
 .hero-container{
     text-align: center;
-    padding-top:60px;
-    padding-bottom: 75px;
+    padding:60px 0px;
+
 }
-.headline {
+.contact-content {
     text-align: center;
     line-height: 2;
     margin-bottom: 75px;
 }
+.contact-content h4 {
+    margin-bottom: 60px;
+}
+.contact-content a {
+    display: block;
+    font-family: var(--bodyFontBold);
+    text-decoration: underline;
+    color: var(--colorSecondary);
+}
 
-.home-button-container{
+.contact-button-container{
     width: 100%;
     text-align: center;
     height: 200px;
 }
-.home-button{
+.contact-button{
     background: none;
     border: none;
     filter: drop-shadow(0px 20px 7px rgba(0, 15, 37, 0.2));
     cursor: pointer;
 }
-.home-button h4{
+.contact-button h4{
     position: relative;
     top:-45px;
     font-family: var(--bodyFontBold);
     color: var(--colorSecondary);
 }
-.home-button img{
+.contact-button img{
     width:180px;
 }
-.home-button:hover{
+.contact-button:hover{
     padding-top: 5px;
     filter: drop-shadow(0px 1px 5px rgba(0, 15, 37, 0.4));
 }

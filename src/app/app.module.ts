@@ -12,6 +12,7 @@ import { P01Component } from './pages/p01/p01.component';
 import { P02Component } from './pages/p02/p02.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { P03Component } from './pages/p03/p03.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     P01Component,
     P02Component,
     ResumeComponent,
-    ContactComponent
+    ContactComponent,
+    P03Component
   ],
   imports: [
     BrowserModule,

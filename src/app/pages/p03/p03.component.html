@@ -1,0 +1,52 @@
+<section class="mainTemplate-container">
+    <div class="parallax-container">
+        <h1 class="mainTemplate-title">ULINE<br>Site</h1>
+        <img class="cloud-1" src="assets/images/cloud-sm.svg">
+        <img class="cloud-2" src="assets/images/cloud-sm.svg">
+    </div>
+    <img class="cloud-3" src="assets/images/cloud-bg.svg">
+    <div class="mainTemplate-content-container">
+        <section class="mainTemplate-content-wide">
+            <h3 class="margin-m">Uline Internal Site</h3>
+            <p class="margin-sm opacity-1">July - September 2022</p>
+            <p class="margin-sm opacity-1">HTML - CSS - Javascript - Bootstrap - Photoshop</p>
+            <p class="margin-m">An internal site created for the Uline Inventory Control team. I was the sole developer and designer on the project and utilized bootstrap to create the site. I worked closely with the client to understand the team goals in order to achieve an effective end product.</p>
+        </section>
+        <section class="mainTemplate-content-wide">
+            <video class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom" [muted]="'muted'" playsinline autobuffer autoplay muted loop>
+                <source src="assets/images/ic/ic_vid1.mp4">
+            </video><!--
+            <img src="/assets/images/gull.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">-->
+            <h3 class="margin-m">Brief</h3>
+            <p class="margin-sm">The goal with this project was to design an internal site for the Inventory Control Team. The team wanted a site to house their pdf's, URL resources, and Excel files. The end product would need to adhere to Uline style guides and use a simple framework that would be replicable for future internal sites.</p>
+        </section>
+        <section class="mainTemplate-content-wide two-col">
+            <img src="/assets/images/gull2.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-xl-bottom">
+            <div class="flex-center">
+                <h3 class="margin-m">Ideation</h3>
+                <p class="margin-sm">I created a simple wire-frame to layout the general styling and simple sitemap.</p>
+            </div>
+        </section>
+        <section class="mainTemplate-content-wide">
+            <img src="/assets/images/ic/ic_bootstrap.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
+            <h3 class="margin-m">Development</h3>
+            <p class="margin-sm">I began development by choosing to build out the project with bootstrap. I chose bootstrap because it would allow me to quickly build out the project with consistent styling. This was important because our team planned to develop more of these internal sites and it was important that these sites could be created quickly.</p>
+        </section>
+        <section class="mainTemplate-content-wide">
+            <img src="/assets/images/nasa/nasa_api.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
+            <p class="margin-xl-bottom flex-center">The Site did come with its challenges. The project required good communication to walk through what solutions would be possible for the site. For example: the client wanted to be able to open a folder with several PDF's on their desktop through a link on the site. Due to security reasons, browsers will not allow this functionality. Instead, I instructed the client that the PDF's would need to be put in a folder accessible to the HTML. The client was ok with this but it brought on another issue...</p>
+        </section>
+        <section class="mainTemplate-content-wide">
+            <img src="/assets/images/ic/ic_development2.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
+            <p class="margin-xl-bottom flex-center">Because the links were now linking to PDF's, the browser would cache it. Meaning users might not see when an update is made to a PDF due to caching. For a solution, I added a script that would target every class with the text “doc” and apply a random generated number to the end of the url. That way the browser would get a new document every time and the solution would work for both Excel documents and PDF's.</p>
+        </section>
+        <section class="mainTemplate-content-wide text-center">
+            <video class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom" [muted]="'muted'" playsinline autobuffer autoplay muted loop>
+                <source src="assets/images/ic/ic_vid2.mp4">
+            </video>
+            <h3 class="margin-m">Conclusion</h3>
+            <p class="margin-lg">I was able to effectively communicate with the design client to produce an effective and highly usable site for the team. Using our brand style guides I designed an interface that would fit company standards. Finally, I utilized bootstrap as the architecture, allowing for future internal projects to be quickly created.</p>
+            <a class="p-40 link-secondary" routerLink="/project01">Next Project</a>
+        </section>
+    </div>
+</section>
