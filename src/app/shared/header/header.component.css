@@ -158,10 +158,10 @@ nav{
     transition: all 5s ease-in-out;
 }
 .cloud-left-moved{
-    left:-3000px;
+    left:-200%;
 }
 .cloud-right-moved{
-    right:-3000px;
+    right:-200%;
 }
 
 .cloud-container img{
