@@ -1,10 +1,10 @@
 <section class="mainTemplate-container">
     <div class="parallax-container">
         <h1 class="mainTemplate-title">NASA<br>Earth App</h1>
-        <img class="cloud-1" src="assets/images/cloud-sm.svg">
-        <img class="cloud-2" src="assets/images/cloud-sm.svg">
+        <img alt="cloud background illustration" class="cloud-1" src="assets/images/cloud-sm.svg">
+        <img alt="cloud background illustration" class="cloud-2" src="assets/images/cloud-sm.svg">
     </div>
-    <img class="cloud-3" src="assets/images/cloud-bg.svg">
+    <img alt="large cloud background illustration" class="cloud-3" src="assets/images/cloud-bg.svg">
     <div class="mainTemplate-content-container">
         <section class="mainTemplate-content-wide">
             <h3 class="margin-m">NASA Earth Image App</h3>
@@ -22,28 +22,28 @@
             <p class="margin-sm">This project came from my desire to work with an API from NASA, my only reason - I thought it'd be FUN! My goal was to create an application within Angular to serve a daily image of the Earth with past search functionality.</p>
         </section>
         <section class="mainTemplate-content-wide two-col">
-            <img src="/assets/images/gull2.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-xl-bottom">
+            <img alt="sketches" src="/assets/images/nasa/nasa_ideation.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-xl-bottom">
             <div class="flex-center">
                 <h3 class="margin-m">Ideation</h3>
-                <p class="margin-sm">I created a simple wire-frame to layout the general styling and simple sitemap.</p>
+                <p class="margin-sm">Sketching allowed me to explore many possibilities within layout and functionality. It was important that both desktop and mobile concepts were explored so that development would be quicker later on. Through ideation I found that I wanted to focus on the "change date" feature. I chose this because I felt it would be a good challenge to work with API endpoints and template-driven forms.</p>
             </div>
         </section>
         <section class="mainTemplate-content-wide">
-            <img src="/assets/images/nasa/nasa_json.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
+            <img  alt="JSON data" src="/assets/images/nasa/nasa_json.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
             <h3 class="margin-m">Development</h3>
             <p class="margin-sm">At this stage in the process I began to create my project using Angular. I chose Angular because it would allow me to test my skills in the framework. I used the NASA “EPIC” API to display the image. There were two endpoints I was interested in - the date and the image endpoints. The date endpoint would provide JSON data with the image name, while the image endpoint would use that image name to display the image. The user could then specify the date which they would like to see. This was the basis for how the app would function.</p>
         </section>
         <section class="mainTemplate-content-wide">
-            <img src="/assets/images/nasa/nasa_api.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
+            <img alt="API call" src="/assets/images/nasa/nasa_api.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
             <p class="margin-xl-bottom flex-center">I create an API call using the HTTP client service. I use the HTTP .get() method to fetch data from the NASA "EPIC" API. I use the "myDate" parameter (specified in the service) tocall the specific date.</p>
         </section>
         <section class="mainTemplate-content-wide two-col">
-            <img src="/assets/images/nasa/nasa_noImage.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-xl-bottom">
+            <img alt="If invalid date, image replaced with text" src="/assets/images/nasa/nasa_noImage.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-xl-bottom">
             <p class="margin-sm flex-center">Development did not go without it's issues. I found it would be crucial that the app had functionality to notify when an image was not available. The spacecraft does not always take images due to the camera being down. This meant I had to specify in the code that if an image was not found, the alert be presented.</p>
         </section>
         <section class="mainTemplate-content-wide two-col">
             <p class="margin-xl-bottom flex-center">Having a “Loading” feature also became important. It takes time for the image to load from the API, meaning that users would need feedback to know whether the application was working. To combat this, I added code within the initial API call to display the “Loading” text and removing once the API call is complete.</p>
-            <img src="/assets/images/nasa/nasa_loading.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-sm">
+            <img alt="As image loads, loading text is added" src="/assets/images/nasa/nasa_loading.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-sm">
         </section>
         <section class="mainTemplate-content-wide text-center">
             <video class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom" [muted]="'muted'" playsinline autobuffer autoplay muted loop>
@@ -53,7 +53,7 @@
             <img src="/assets/images/gull.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">-->
             <h3 class="margin-m">Conclusion</h3>
             <p class="margin-lg">This project was fun challenge of my skills in Angular and API knowledge. The API came with its obstacles but pushed me to find solutions, helping me become a better developer!</p>
-            <a class="p-40 link-secondary" routerLink="/project01">Next Project</a>
+            <a class="p-40 link-secondary" routerLink="/project03">Next Project</a>
         </section>
     </div>
 </section>

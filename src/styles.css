@@ -240,6 +240,11 @@ p{
     h2{
         font-size: 100px;
     }
+    h1{
+        font-family: var(--displayFont);
+        font-size: 150px;
+        color: var(--colorSecondary);
+    }
 }
 @media only screen and (min-width: 400px) {
     .mainTemplate-title {
