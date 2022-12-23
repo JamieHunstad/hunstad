@@ -13,6 +13,7 @@ import { P02Component } from './pages/p02/p02.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { P03Component } from './pages/p03/p03.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { P03Component } from './pages/p03/p03.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

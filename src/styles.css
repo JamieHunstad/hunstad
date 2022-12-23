@@ -112,7 +112,7 @@ p{
 }
 
 .mainTemplate-image, .mainTemplate-imageNoHvr {
-    background-color: var(--colorSecondary);
+    background-color: white;
     border-radius: 20px;
     width: 100%;
     display: block;

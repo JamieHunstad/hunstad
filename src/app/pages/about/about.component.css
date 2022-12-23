@@ -1,9 +1,14 @@
 
 .diver{
-    width:400px;
+    width:300px;
     position: relative;
     top: 250px;
     left: 10%;
     transform: translateZ(-10px) scale(2);
     z-index:-10;
+}
+@media screen and (min-width: 768px) {
+    .diver{
+        width:400px;
+    }
 }
