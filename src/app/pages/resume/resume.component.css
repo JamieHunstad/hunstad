@@ -48,6 +48,7 @@
     top:-45px;
     font-family: var(--bodyFontBold);
     color: var(--colorSecondary);
+    font-size: 14px;
 }
 .resume-button img{
     width:180px;
