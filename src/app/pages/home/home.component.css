@@ -92,6 +92,7 @@ main {
     border: none;
     filter: drop-shadow(0px 20px 7px rgba(0, 15, 37, 0.2));
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .home-button h4{
     position: relative;
