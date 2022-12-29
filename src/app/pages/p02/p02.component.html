@@ -11,7 +11,7 @@
             <a class="margin-sm link-secondary" href="https://github.com/JamieHunstad/nasaApp" target="_blank">https://github.com/JamieHunstad/nasaApp</a>
             <p class="margin-sm opacity-1">September 2022 - October 2022</p>
             <p class="margin-sm opacity-1">HTML - CSS - Javascript - Angular - Illustrator</p>
-            <p class="margin-m">A daily Earth imaging application utilizing the NASA “EPIC” API. The EPIC API provides information on the daily imagery collected by DSCOVR's Earth Polychromatic Imaging Camera (EPIC) instrument. This was a personal project I created in my spare time to challenege my skills in Angular!</p>
+            <p class="margin-m">A daily Earth imaging application utilizing the NASA “EPIC” API. The EPIC API provides information on the daily imagery collected by DSCOVR's Earth Polychromatic Imaging Camera (EPIC) instrument. This was a personal project I created in my spare time to challenge my skills in Angular!</p>
         </section>
         <section class="mainTemplate-content-wide">
             <video class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom" [muted]="'muted'" playsinline autobuffer autoplay muted loop>
@@ -22,28 +22,43 @@
             <p class="margin-sm">This project came from my desire to work with an API from NASA, my only reason - I thought it'd be FUN! My goal was to create an application within Angular to serve a daily image of the Earth with past search functionality.</p>
         </section>
         <section class="mainTemplate-content-wide two-col">
-            <img alt="sketches" src="/assets/images/nasa/nasa_ideation.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-xl-bottom">
+            <picture>
+                <source srcset="/assets/images/nasa/nasa_ideation.webp" type="image/webp">
+                <img alt="sketches" src="/assets/images/nasa/nasa_ideation.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-xl-bottom">
+            </picture>
             <div class="flex-center">
                 <h3 class="margin-m">Ideation</h3>
-                <p class="margin-sm">Sketching allowed me to explore many possibilities within layout and functionality. It was important that both desktop and mobile concepts were explored so that development would be quicker later on. Through ideation I found that I wanted to focus on the "change date" feature. I chose this because I felt it would be a good challenge to work with API endpoints and template-driven forms.</p>
+                <p class="margin-sm">Sketching allowed me to explore many possibilities within layout and functionality. It was important that both desktop and mobile concepts were explored so that development would be quicker later on. Through ideation, I found that I wanted to focus on the "change date" feature. I chose this because I felt it would be a good challenge to work with API endpoints and template-driven forms.</p>
             </div>
         </section>
         <section class="mainTemplate-content-wide">
-            <img  alt="JSON data" src="/assets/images/nasa/nasa_json.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
+            <picture>
+                <source srcset="/assets/images/nasa/nasa_json.webp" type="image/webp">
+                <img  alt="JSON data" src="/assets/images/nasa/nasa_json.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
+            </picture>
             <h3 class="margin-m">Development</h3>
-            <p class="margin-sm">At this stage in the process I began to create my project using Angular. I chose Angular because it would allow me to test my skills in the framework. I used the NASA “EPIC” API to display the image. There were two endpoints I was interested in - the date and the image endpoints. The date endpoint would provide JSON data with the image name, while the image endpoint would use that image name to display the image. The user could then specify the date which they would like to see. This was the basis for how the app would function.</p>
+            <p class="margin-sm">At this stage in the process, I began to create my project using Angular. I chose Angular because it would allow me to test my skills in the framework. I used the NASA “EPIC” API to display the image. There were two endpoints I was interested in - the date and the image endpoints. The date endpoint would provide JSON data with the image name, while the image endpoint would use that image name to display the image. The user could then specify the date on which they would like to see it. This was the basis for how the app would function.</p>
         </section>
         <section class="mainTemplate-content-wide">
-            <img alt="API call" src="/assets/images/nasa/nasa_api.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
-            <p class="margin-xl-bottom flex-center">I create an API call using the HTTP client service. I use the HTTP .get() method to fetch data from the NASA "EPIC" API. I use the "myDate" parameter (specified in the service) tocall the specific date.</p>
+            <picture>
+                <source srcset="/assets/images/nasa/nasa_api.webp" type="image/webp">
+                <img alt="API call" src="/assets/images/nasa/nasa_api.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
+            </picture>
+            <p class="margin-xl-bottom flex-center">I create an API call using the HTTP client service. I use the HTTP .get() method to fetch data from the NASA "EPIC" API. I use the "myDate" parameter (specified in the service) to call the specific date.</p>
         </section>
         <section class="mainTemplate-content-wide two-col">
-            <img alt="If invalid date, image replaced with text" src="/assets/images/nasa/nasa_noImage.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-xl-bottom">
-            <p class="margin-sm flex-center">Development did not go without it's issues. I found it would be crucial that the app had functionality to notify when an image was not available. The spacecraft does not always take images due to the camera being down. This meant I had to specify in the code that if an image was not found, the alert be presented.</p>
+            <picture>
+                <source srcset="/assets/images/nasa/nasa_noImage.webp" type="image/webp">
+                <img alt="If invalid date, image replaced with text" src="/assets/images/nasa/nasa_noImage.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-xl-bottom">
+            </picture>
+            <p class="margin-sm flex-center">Development did not go without its issues. I found it would be crucial that the app had functionality to notify when an image was not available. The spacecraft does not always take images due to the camera being down. This meant I had to specify in the code that if an image was not found, the alert would be presented.</p>
         </section>
         <section class="mainTemplate-content-wide two-col">
             <p class="margin-xl-bottom flex-center">Having a “Loading” feature also became important. It takes time for the image to load from the API, meaning that users would need feedback to know whether the application was working. To combat this, I added code within the initial API call to display the “Loading” text and removing once the API call is complete.</p>
-            <img alt="As image loads, loading text is added" src="/assets/images/nasa/nasa_loading.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-sm">
+            <picture>
+                <source srcset="/assets/images/nasa/nasa_loading.webp" type="image/webp">
+                <img alt="As image loads, loading text is added" src="/assets/images/nasa/nasa_loading.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-sm">
+            </picture>
         </section>
         <section class="mainTemplate-content-wide text-center">
             <video class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom" [muted]="'muted'" playsinline autobuffer autoplay muted loop>
@@ -52,7 +67,7 @@
             <!---
             <img src="/assets/images/gull.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">-->
             <h3 class="margin-m">Conclusion</h3>
-            <p class="margin-lg">This project was a fun challenge of my skills in Angular and API knowledge. The API came with its obstacles but pushed me to find solutions, helping me become a better developer!</p>
+            <p class="margin-lg">This project was a fun challenge to test my skills in Angular and API knowledge. The API came with its obstacles but pushed me to find solutions, helping me become a better developer!</p>
             <a class="p-40 link-secondary" routerLink="/project03">Next Project</a>
         </section>
     </div>

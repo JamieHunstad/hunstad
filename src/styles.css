@@ -93,23 +93,6 @@ p{
     white-space: nowrap;
 }
 
-.mainTemplate-image-desktop {
-    display: none;
-}
-.mainTemplate-image-mobile {
-    background-color: var(--colorSecondary);
-    border-radius: 20px;
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    transition: all 1s;
-}
-.mainTemplate-image-mobile:hover{
-    width: 95%;
-    cursor: pointer;
-}
 
 .mainTemplate-image, .mainTemplate-imageNoHvr {
     background-color: white;
@@ -253,21 +236,7 @@ p{
         padding-left:25%;
         padding-right:25%;
     }
-
-    .mainTemplate-image-mobile {
-        display: none;
-    }
-    .mainTemplate-image-desktop {
-        background-color: var(--colorSecondary);
-        border-radius: 20px;
-        width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    
-        transition: all 1s;
-    }
-    .mainTemplate-image-desktop:hover{
+    .mainTemplate-image:hover{
         width: 95%;
         cursor: pointer;
     }

@@ -10,7 +10,7 @@
             <h3 class="margin-m">Uline Internal Site</h3>
             <p class="margin-sm opacity-1">July - September 2022</p>
             <p class="margin-sm opacity-1">HTML - CSS - Javascript - Bootstrap - Photoshop</p>
-            <p class="margin-m">An internal site created for the Uline Inventory Control team. I was the sole developer and designer on the project and utilized bootstrap to create the site. I worked closely with the client to understand the team goals in order to achieve an effective end product.</p>
+            <p class="margin-m">An internal site created for the Uline Inventory Control team. I was the sole developer and designer on the project and utilized bootstrap to create the site. I worked closely with the client to understand the team's goals in order to achieve an effective end product.</p>
         </section>
         <section class="mainTemplate-content-wide">
             <video class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom" [muted]="'muted'" playsinline autobuffer autoplay muted loop>
@@ -18,27 +18,39 @@
             </video><!--
             <img src="/assets/images/gull.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">-->
             <h3 class="margin-m">Brief</h3>
-            <p class="margin-sm">The goal with this project was to design an internal site for the Inventory Control Team. The team wanted a site to house their pdf's, URL resources, and Excel files. The end product would need to adhere to Uline style guides and use a simple framework that would be replicable for future internal sites.</p>
+            <p class="margin-sm">The goal of this project was to design an internal site for the Inventory Control Team. The team wanted a site to house their PDF's, URL resources, and Excel files. The end product would need to adhere to Uline style guides and use a simple framework that would be replicable for future internal sites.</p>
         </section>
         <section class="mainTemplate-content-wide two-col">
-            <img alt="wireframe" src="/assets/images/ic/ic_ideation.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-xl-bottom">
+            <picture>
+                <source srcset="/assets/images/ic/ic_ideation.webp" type="image/webp">
+                <img alt="wireframe" src="/assets/images/ic/ic_ideation.jpg" class="mainTemplate-imageNoHvr content-wide-two_col-image margin-xl-bottom">
+            </picture>
             <div class="flex-center">
                 <h3 class="margin-m">Wire-Frame</h3>
                 <p class="margin-sm">I created a simple wire-frame to plan out functionality and layout. I found that using the bootstrap accordion design would be the best solution for the client. It would allow for a vast amount of links without the user becoming overwhelmed.</p>
             </div>
         </section>
         <section class="mainTemplate-content-wide">
-            <img alt="Tools page overview" src="/assets/images/ic/ic_bootstrap.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
+            <picture>
+                <source srcset="/assets/images/ic/ic_bootstrap.webp" type="image/webp">
+                <img alt="Tools page overview" src="/assets/images/ic/ic_bootstrap.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
+            </picture>
             <h3 class="margin-m">Development</h3>
             <p class="margin-sm">I began development by choosing to build out the project with bootstrap. I chose bootstrap because it would allow me to quickly build out the project with consistent styling. This was important because our team planned to develop more of these internal sites and it was important that these sites could be created quickly.</p>
         </section>
         <section class="mainTemplate-content-wide">
-            <img alt="API call" src="/assets/images/nasa/nasa_api.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
-            <p class="margin-xl-bottom flex-center">The Site did come with its challenges. The project required good communication to walk through what solutions would be possible for the site. For example: the client wanted to be able to open a folder with several PDF's on their desktop through a link on the site. Due to security reasons, browsers will not allow this functionality. Instead, I instructed the client that the PDF's would need to be put in a folder accessible to the HTML. The client was ok with this but it brought on another issue...</p>
+            <picture>
+                <source srcset="/assets/images/nasa/nasa_api.webp" type="image/webp">
+                <img alt="API call" src="/assets/images/nasa/nasa_api.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
+            </picture>
+            <p class="margin-xl-bottom flex-center">The Site did come with its challenges. The project required good communication to walk through what solutions would be possible for the site. For example, the client wanted to be able to open a folder with several PDF's on their desktop through a link on the site. Due to security reasons, browsers will not allow this functionality. Instead, I instructed the client that the PDF's would need to be put in a folder accessible to the HTML. The client was ok with this but it brought on another issue...</p>
         </section>
         <section class="mainTemplate-content-wide">
-            <img alt="javascript function" src="/assets/images/ic/ic_development2.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
-            <p class="margin-xl-bottom flex-center">Because the links were now linking to PDF's, the browser would cache it. Meaning users might not see when an update is made to a PDF due to caching. For a solution, I added a script that would target every class with the text “doc” and apply a random generated number to the end of the url. That way the browser would get a new document every time and the solution would work for both Excel documents and PDF's.</p>
+            <picture>
+                <source srcset="/assets/images/ic/ic_development2.webp" type="image/webp">
+                <img alt="javascript function" src="/assets/images/ic/ic_development2.jpg" class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom">
+            </picture>
+            <p class="margin-xl-bottom flex-center">Because the links were now linking to PDF's, the browser would cache them. Meaning users might not see when an update is made to a PDF due to caching. For a solution, I added a script that would target every class with the text “doc” and apply a randomly generated number to the end of the URL. That way the browser would get a new document every time and the solution would work for both Excel documents and PDF's.</p>
         </section>
         <section class="mainTemplate-content-wide text-center">
             <video class="mainTemplate-imageNoHvr content-wide-image margin-xl-bottom" [muted]="'muted'" playsinline autobuffer autoplay muted loop>
