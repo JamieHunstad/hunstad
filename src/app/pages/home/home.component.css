@@ -11,7 +11,7 @@ main {
 }
 .hero-container{
     text-align: center;
-    padding-top:100px;
+    padding-top:45px;
     padding-bottom: 75px;
 }
 .hero-letters{
@@ -110,6 +110,9 @@ main {
 
 
 @media screen and (min-width: 768px){
+    .hero-container{
+        padding-top:100px;
+    }
     .hero-letters{
         font-size: 100px;
     }
